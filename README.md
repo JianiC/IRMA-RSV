@@ -7,18 +7,24 @@ Two RSV module: RSV-SHGF library and RSV-without SHGF library are created due th
 ### To run the nesting scripts
 ```
 $git clone https://github.com/JianiC/IRMA-RSV/tree/master/IRMA-segments_combine
+
 $./comb.sh
 ```
 ### Requirements
 Gene alignment tool MAFFT need to be installed under ./src
-Required Java JDK8 or higher
+
+Required Java JDK8 or higher to be installed
 
 RSV IRMA output directory need to be moved under the same directory
-IRMA output from different library need to be labeled as \*RSV_1 \*RSV2
+IRMA output from different library need to be labeled as "*RSV_1" and ""*RSV_2"
 
 ### How it works
-Step1: Make sure IRMA output directories exist
+Step1: Make sure IRMA output directories exist.
+
 Step2: The ORF of different gene regions are defined with reference sequence considering the possible issue at the inter-genetic regions.
-Step3: Different gene regions from IRMA consensus read are nested together
-Step4: Alignment with reference sequence file is also generated
-Step5: A sum file will be created contain the genotype and length information for all RSV samples under the directory
+
+Step3: Different gene regions from IRMA consensus read are nested together.
+
+Step4: Alignment with reference sequence file is also generated.
+
+Step5: A sum file will be created contain the genotype and length information for all RSV samples under the directory.
