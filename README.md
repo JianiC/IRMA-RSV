@@ -14,14 +14,17 @@ $./comb.sh
 Gene alignment tool MAFFT need to be installed under ./src
 
 Required Java JDK8 or higher to be installed
-
+In case of java version issue, you could also compile the java code by yourself
+```
+javac ./nest.java
+```
 RSV IRMA output directory need to be moved under the same directory
-IRMA output from different library need to be labeled as "*RSV_1" and ""*RSV_2"
+IRMA output from different library need to be labeled as "*_RSV_1" and ""*_RSV_2"
 
 ### How it works
 Step1: Make sure IRMA output directories exist.
 
-Step2: The ORF of different gene regions are defined with reference sequence considering the possible issue at the inter-genetic regions.
+Step2: The ORF of different gene regions are defined with reference sequence considering the possible issue at the intergenic regions.
 
 Step3: Different gene regions from IRMA consensus read are nested together.
 
