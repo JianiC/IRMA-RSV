@@ -8,7 +8,7 @@ For single read:
 ## Run IRMA RSV with pseudo-segment (to fix the low QC, usually the homopolymer issue)
 ```
 IRMA <RSV1-config> <fastq/fastq.gz> <sample_name>
-IRMA <RSV1-config> <fastq/fastq.gz> <sample_name>
+IRMA <RSV2-config> <fastq/fastq.gz> <sample_name>
 ```
 ### IRMA set up with multiple samples
 irma_set.sh
