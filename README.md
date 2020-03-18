@@ -18,9 +18,10 @@ Two RSV module: RSV-SHGF library and RSV-without SHGF library are created due th
 
 RSV IRMA output directoryies, .sh, reference directory, java screipts need to be moved under a same directory
 IRMA output from different libraries need to be labeled as _"*_RSV1"_ and _"*_RSV2"_
-**On Local**
-**Gene alignment tool MAFFT need to be installed under ./src**
 
+**On Local**
+
+Gene alignment tool MAFFT need to be installed under ./src
 ```
 $git clone https://github.com/JianiC/IRMA-RSV/tree/master/IRMA-segments_combine
 ## Compile the java
