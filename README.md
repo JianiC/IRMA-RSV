@@ -23,7 +23,6 @@ IRMA output from different libraries need to be labeled as _"*_RSV1"_ and _"*_RS
 
 Gene alignment tool MAFFT need to be installed under ./src
 ```
-$git clone https://github.com/JianiC/IRMA-RSV/tree/master/IRMA-segments_combine
 ## Compile the java
 javac ./nest.java
 sh comb.sh >> comb.log
@@ -32,14 +31,13 @@ sh comb.sh >> comb.log
 **On Server**
 ```
 ## Add module load MAFFT in shell script
-$git clone https://github.com/JianiC/IRMA-RSV/tree/master/gacrc_RSV-seg_combine
 
 javac ./nest.java
-sh comb.sh >> comb.log
+sh comb.sh >> gacrc_comb.log
 ```
 
 ### How this pipeline works
-Step1: .sh will check the existance of IRMA output _RSV1 and _RSV2 directories.
+Step1: .sh will check the exists of IRMA output _RSV1 and _RSV2 directories and amended_consensus sub directories.
 
 Step2: The ORF of different gene regions are searched by allignment with reference sequence considering the possible issue at the intergenic regions.
 
