@@ -5,10 +5,12 @@ For pair read:
 For single read:
 `IRMA <RSV-config> <fastq/fastq.gz> <sample_name>`
 
+
+
 ## Run IRMA RSV with pseudo-segment (to fix the low QC, usually the homopolymer issue)
 ```
-IRMA <RSV1-config> <fastq/fastq.gz> <sample_name_RSV1>
-IRMA <RSV2-config> <fastq/fastq.gz> <sample_name_RSV2>
+IRMA <RSV0-config> <fastq/fastq.gz> <sample_name_RSV1>
+IRMA <RSV0-config> <fastq/fastq.gz> <sample_name_RSV2>
 ```
 ## Nesting RSV pseudo-segment Library output
 Assembly RSV sequence read with pseudo-segments instead of WGS can fix some low QC reads
